@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfAppMemory.WindowAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMemory"
+        mc:Ignorable="d"
+        Title="О программе" Height="370" Width="420" MinHeight="370" MinWidth="420" 
+        Background="OrangeRed" WindowStartupLocation="CenterScreen" BorderThickness="2">
+    <Grid Background="DeepPink" Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Margin="10" Padding="5" 
+                   TextAlignment="Center" TextWrapping="Wrap">
+            <TextBlock.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" >
+                    <GradientStop Color="Blue" Offset="0.1" />
+                    <GradientStop Color="Orange" Offset="0.25" />
+                    <GradientStop Color="Yellow" Offset="0.50" />
+                    <GradientStop Color="Green" Offset="0.75" />
+                    <GradientStop Color="Red" Offset="1.0" />
+                </LinearGradientBrush>
+            </TextBlock.Background>
+
+            <LineBreak />Контрольная работа
+<LineBreak />Разработка игрового приложения
+<LineBreak />
+<LineBreak />Цель:
+<LineBreak />Целью данной работы является закрепление навыков, полученных в ходе выполнения предыдущих лабораторных работ.
+<LineBreak />Задание:
+<LineBreak />Разработать и реализовать приложение
+<LineBreak />Вариант 3:
+<LineBreak />Разработать и реализовать игру «Память».
+<LineBreak />Правила игры «Память» http://testbrain.ru/tests/viewMemory
+        </TextBlock>
+        <Button Background="RoyalBlue" Width="200" Grid.Row="1" HorizontalAlignment="Center" Margin="10" Padding="5" Click="Button_Click_Exit">Закрыть</Button>
+    </Grid>
+</Window>

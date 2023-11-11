@@ -1,0 +1,254 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\3d.png" />
+    <None Remove="Images\3floppy_unmount.png" />
+    <None Remove="Images\access.png" />
+    <None Remove="Images\acroread.png" />
+    <None Remove="Images\advancedsettings.png" />
+    <None Remove="Images\agent.png" />
+    <None Remove="Images\agt_announcements.png" />
+    <None Remove="Images\agt_business.png" />
+    <None Remove="Images\agt_desktop_enhancements.png" />
+    <None Remove="Images\agt_games.png" />
+    <None Remove="Images\agt_home.png" />
+    <None Remove="Images\agt_internet.png" />
+    <None Remove="Images\agt_member.png" />
+    <None Remove="Images\agt_mp3.png" />
+    <None Remove="Images\agt_multimedia.png" />
+    <None Remove="Images\agt_utilities.png" />
+    <None Remove="Images\aim_protocol.png" />
+    <None Remove="Images\amor.png" />
+    <None Remove="Images\announcements.png" />
+    <None Remove="Images\antivirus.png" />
+    <None Remove="Images\autostart1.png" />
+    <None Remove="Images\babelfish.png" />
+    <None Remove="Images\bell.png" />
+    <None Remove="Images\blockdevice.png" />
+    <None Remove="Images\browser.png" />
+    <None Remove="Images\bug.png" />
+    <None Remove="Images\cache.png" />
+    <None Remove="Images\camera_unmount.png" />
+    <None Remove="Images\cam_unmount.png" />
+    <None Remove="Images\colors.png" />
+    <None Remove="Images\colorscm.png" />
+    <None Remove="Images\connect_to_network.png" />
+    <None Remove="Images\core.png" />
+    <None Remove="Images\error.png" />
+    <None Remove="Images\exec.png" />
+    <None Remove="Images\flag.png" />
+    <None Remove="Images\folder_home.png" />
+    <None Remove="Images\folder_image.png" />
+    <None Remove="Images\folder_outbox.png" />
+    <None Remove="Images\folder_red.png" />
+    <None Remove="Images\fortress.png" />
+    <None Remove="Images\gadu.png" />
+    <None Remove="Images\gf.png" />
+    <None Remove="Images\gimp.png" />
+    <None Remove="Images\gnome_apps.png" />
+    <None Remove="Images\icons.png" />
+    <None Remove="Images\jabber_protocol.png" />
+    <None Remove="Images\java_src.png" />
+    <None Remove="Images\joystick.png" />
+    <None Remove="Images\kaboodle.png" />
+    <None Remove="Images\kbemusedsrv.png" />
+    <None Remove="Images\keditbookmarks.png" />
+    <None Remove="Images\kgoldrunner.png" />
+    <None Remove="Images\klaptopdaemon.png" />
+    <None Remove="Images\kmahjongg.png" />
+    <None Remove="Images\konquest.png" />
+    <None Remove="Images\ktalkd.png" />
+    <None Remove="Images\kteatime.png" />
+    <None Remove="Images\kthememgr.png" />
+    <None Remove="Images\ktron.png" />
+    <None Remove="Images\kvirc.png" />
+    <None Remove="Images\mouse.png" />
+    <None Remove="Images\mozillacrystal.png" />
+    <None Remove="Images\mozilla_doc.png" />
+    <None Remove="Images\msn.png" />
+    <None Remove="Images\no3D.png" />
+    <None Remove="Images\package_favorite.png" />
+    <None Remove="Images\package_games_kids.png" />
+    <None Remove="Images\package_games_strategy.png" />
+    <None Remove="Images\package_graphics.png" />
+    <None Remove="Images\package_toys.png" />
+    <None Remove="Images\package_utilities.png" />
+    <None Remove="Images\parallels.png" />
+    <None Remove="Images\password.png" />
+    <None Remove="Images\pda alt.png" />
+    <None Remove="Images\phppg.png" />
+    <None Remove="Images\remote.png" />
+    <None Remove="Images\setup_assistant.png" />
+    <None Remove="Images\soffice.png" />
+    <None Remove="Images\source_py.png" />
+    <None Remove="Images\staroffice.png" />
+    <None Remove="Images\swf.png" />
+    <None Remove="Images\tablet.png" />
+    <None Remove="Images\tar.png" />
+    <None Remove="Images\tux.png" />
+    <None Remove="Images\tv.png" />
+    <None Remove="Images\vcard.png" />
+    <None Remove="Images\virus detected.png" />
+    <None Remove="Images\virussafe.png" />
+    <None Remove="Images\Voice-Support.png" />
+    <None Remove="Images\wifi.png" />
+    <None Remove="Images\wine.png" />
+    <None Remove="Images\xedit.png" />
+    <None Remove="Images\xeyes.png" />
+    <None Remove="Images\xine.png" />
+    <None Remove="Images\xmag.png" />
+    <None Remove="Images\xpaint.png" />
+    <None Remove="Images\zip_unmount.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\3floppy_unmount.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\access.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\acroread.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\advancedsettings.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_announcements.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_business.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_desktop_enhancements.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_games.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_internet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_member.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_mp3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_multimedia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\agt_utilities.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\aim_protocol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\amor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\announcements.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\autostart1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\babelfish.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\blockdevice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\bug.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\camera_unmount.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\cam_unmount.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\colorscm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\connect_to_network.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\core.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\exec.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\folder_home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\folder_image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\folder_outbox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\folder_red.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\gf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\java_src.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\joystick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\mouse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\mozilla_doc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\pda alt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\setup_assistant.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\soffice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\source_py.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\swf.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tablet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tv.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\vcard.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\zip_unmount.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

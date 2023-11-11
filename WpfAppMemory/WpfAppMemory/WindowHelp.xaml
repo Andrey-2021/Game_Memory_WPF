@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfAppMemory.WindowHelp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMemory"
+        mc:Ignorable="d"
+        Title="Помощь" Height="490" Width="560" MinHeight="490" MinWidth="560"
+        Background="DarkMagenta" WindowStartupLocation="CenterScreen">
+    <Grid Background="MediumOrchid" Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Margin="10" Padding="5"  
+                   TextAlignment="Center" TextWrapping="Wrap">
+            <TextBlock.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Blue" Offset="0"></GradientStop>
+                    <GradientStop Color="White" Offset="0.8"></GradientStop>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+            <LineBreak/>
+            <LineBreak/>
+            Игра "Память" 
+            <LineBreak/>
+            <LineBreak/>
+            Игра "Память" представляет собой поле на котором 
+            <LineBreak/>расположены карточки с картинками. 
+            <LineBreak/>Карточки лежат в случайном порядке, 
+            <LineBreak/>и каждая из них представлена на поле 2 раза.
+            <LineBreak/>Изначально карточки закрыты и открыть 
+            <LineBreak/>их можно нажатием мыши. В один момент 
+            <LineBreak/>времени могут быть открыты только две 
+            <LineBreak/>карточки (не считая уже найденных пар), 
+            <LineBreak/>поэтому расположение картинок нужно запоминать. 
+            <LineBreak/>При совпадении открытых картинок, найденные пары 
+            <LineBreak/>остаются на поле в открытом виде. 
+            <LineBreak/>
+            <LineBreak/>Цель игры - последовательно открыть все поле.
+            <LineBreak/> 
+            <LineBreak/> Декабрь, 2022г.
+        </TextBlock>
+        <Button Width="150" Background="DeepSkyBlue" Grid.Row="1" HorizontalAlignment="Center" Margin="10" Padding="5" Click="Button_Click_Exit">Закрыть</Button>
+    </Grid>
+</Window>

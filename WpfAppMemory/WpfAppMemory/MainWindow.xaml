@@ -1,0 +1,125 @@
+﻿<Window x:Class="WpfAppMemory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMemory"
+        mc:Ignorable="d"
+        Title="Игра «Память»" Height="730" Width="1100" MinHeight="550" MinWidth="850" 
+        WindowStartupLocation="CenterScreen" >
+    <Window.Background>
+        <RadialGradientBrush RadiusX="0.6" RadiusY="0.8" GradientOrigin="0.3,0.3">
+            <GradientStop Color="Red" Offset="1" />
+            <GradientStop Color="White" Offset="0" />
+        </RadialGradientBrush>
+    </Window.Background>
+    
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Background="Pink" Padding="5">
+            <MenuItem Header="Файл" Margin="5">
+                <MenuItem Header="Выход" Margin="5" Click="MenuItem_Click_Exit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Помощь" Margin="5" Click="MenuItem_Click_Help"></MenuItem>
+            <MenuItem Header="О программе" Margin="5" Click="MenuItem_Click_About"></MenuItem>
+            <MenuItem Header="Выход" Margin="5" Click="MenuItem_Click_Exit"></MenuItem>
+        </Menu>
+
+        <StatusBar DockPanel.Dock="Bottom" Height="40" Background="Firebrick">
+
+            <StatusBarItem>
+                <TextBlock Margin="30,5,5,5" Foreground="Yellow" FontSize="16">С наступающим новым годом!!!!</TextBlock>
+            </StatusBarItem>
+
+            <StatusBarItem HorizontalAlignment="Right">
+                <TextBlock HorizontalAlignment="Right" Margin="0" Width="250"
+                       x:Name="Info" Background="Firebrick" Opacity="0.5">информация</TextBlock>
+            </StatusBarItem>
+            
+        </StatusBar>
+        
+        <StackPanel DockPanel.Dock="Left" Background="Salmon" Width="200">
+            <GroupBox x:Name="GroupBoxSelectGameLevel"  
+                      Margin="10" Padding="5">
+                <GroupBox.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Blue" Offset="0"></GradientStop>
+                        <GradientStop Color="White" Offset="0.5"></GradientStop>
+                    </LinearGradientBrush>
+                </GroupBox.Background>   
+                
+                <GroupBox.Header>
+                    <Button Background="Yellow" Margin="2" Padding="2">Красавчик!Выбери уровень!</Button>
+                </GroupBox.Header>
+                <StackPanel>
+                    <RadioButton GroupName="LevelGroup" Name="Beginer" Content="Лёгкий (4х4)" 
+                                 Margin="5" Padding="5" Checked="RadioButton_Checked_FirstLevel" 
+                                 VerticalContentAlignment="Center"></RadioButton>
+                    <RadioButton GroupName="LevelGroup" Name="GudBeginer" Content="Чуть сложнее (6х6)" 
+                                 Margin="5" Padding="5" Checked="RadioButton_Checked_NextLevel" 
+                                 VerticalContentAlignment="Center"></RadioButton>
+                    <RadioButton GroupName="LevelGroup" Content="Средний (8х8)" 
+                                 Margin="5" Padding="5" Checked="RadioButton_Checked_Second"
+                                 VerticalContentAlignment="Center"></RadioButton>
+                    <RadioButton GroupName="LevelGroup" Content="Ещё сложнее (10х10)" 
+                                 Margin="5" Padding="5" Checked="RadioButton_Checked_NextSecond"
+                                 VerticalContentAlignment="Center"></RadioButton>
+                    <RadioButton GroupName="LevelGroup" Content="Профи (12х12)" 
+                                 Margin="5" Padding="5" Checked="RadioButton_Checked_Professional"
+                                 VerticalContentAlignment="Center"></RadioButton>
+                </StackPanel>
+            </GroupBox>
+
+            <Button x:Name="ButtonStart" Margin="10" Padding="5" Click="Button_Click_StartGame" Content="Старт" >
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Yellow" Offset="0.0" />
+                        <GradientStop Color="Red" Offset="0.25" />
+                        <GradientStop Color="Blue" Offset="0.75" />
+                        <GradientStop Color="LimeGreen" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                </Button>
+
+            <Button x:Name="ButtonStop" Margin="10" Padding="5" Click="Button_Click_StopGame" Content="Стоп">
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Yellow" Offset="0.0" />
+                        <GradientStop Color="Red" Offset="0.25" />
+                        <GradientStop Color="Blue" Offset="0.75" />
+                        <GradientStop Color="LimeGreen" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+                
+            </Button>
+            
+            <StackPanel>
+                    <TextBlock HorizontalAlignment="Center" Padding="10">Размер поля:</TextBlock>
+                <TextBlock HorizontalAlignment="Center" x:Name="BorgSizeInfo" Background="Wheat" Width="100" Opacity="0.5"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel DockPanel.Dock="Right" Width="200">
+            <StackPanel.Background>
+                <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0,0" EndPoint="0,0.5">
+                    <GradientStop Color="Tomato" Offset="0"></GradientStop>
+                    <GradientStop Color="White" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </StackPanel.Background>   
+            <Label HorizontalAlignment="Center" Margin="10">Ход:</Label>
+            <TextBox HorizontalAlignment="Center"  Width="100" x:Name="GameStepCounter" Margin="10" Padding="5" IsEnabled="False"></TextBox>
+            <Label HorizontalAlignment="Center" Margin="10">Время:</Label>
+            <TextBox HorizontalAlignment="Center"  Width="100" x:Name="GameTime" Margin="10" Padding="5" IsEnabled="false"></TextBox>
+        </StackPanel>
+        <UniformGrid x:Name="UniformGridGameBord" Margin="5"  >
+            <UniformGrid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" >
+                    <GradientStop Color="Blue" Offset="0.1" />
+                    <GradientStop Color="Orange" Offset="0.25" />
+                    <GradientStop Color="Yellow" Offset="0.50" />
+                    <GradientStop Color="Green" Offset="0.75" />
+                    <GradientStop Color="Red" Offset="1.0" />
+                </LinearGradientBrush>
+            </UniformGrid.Background>
+        </UniformGrid>
+    </DockPanel>
+</Window>
